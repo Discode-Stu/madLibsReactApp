@@ -1,9 +1,73 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import { Col, Row } from "reactstrap";
 
 class MadlibForm extends Component {
+  handleChange = () => {
+    console.log("handleChange");
+  };
+
   render() {
-    return <h1>Mad Libs Form Component</h1>;
+    return (
+      <Row style={{ textAlign: "center", color: "white" }}>
+        <Col className="inputWrapper" md="3">
+          <Row>
+            <Col md="2">
+              <label className="greenLabel">1</label>
+            </Col>
+            <Col md="10">
+              <input
+                placeholder="Color"
+                type="text"
+                onChange={this.handleChange}
+              ></input>
+            </Col>
+          </Row>
+        </Col>
+        <Col className="inputWrapper" md="3">
+          <Row>
+            <Col md="2">
+              <label className="greenLabel">1</label>
+            </Col>
+            <Col md="10">
+              <input
+                placeholder="Color"
+                type="text"
+                onChange={this.handleChange}
+              ></input>
+            </Col>
+          </Row>
+        </Col>
+        <Col className="inputWrapper" md="3">
+          <Row>
+            <Col md="2">
+              <label className="greenLabel">1</label>
+            </Col>
+            <Col md="10">
+              <input
+                placeholder="Color"
+                type="text"
+                onChange={this.handleChange}
+              ></input>
+            </Col>
+          </Row>
+        </Col>
+        <Col className="inputWrapper" md="3">
+          <Row>
+            <Col md="2">
+              <label className="greenLabel">1</label>
+            </Col>
+            <Col md="10">
+              <input
+                placeholder="Color"
+                type="text"
+                onChange={this.handleChange}
+              ></input>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    );
   }
 }
 
-export default MadlibForm
+export default MadlibForm;
