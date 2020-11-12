@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MadlibForm from "./madlib_form";
 
 export default class App extends Component {
   render() {
@@ -12,6 +13,8 @@ export default class App extends Component {
               Mad Lib story.
             </div>
           </div>
+          <MadlibForm  />
+
         </div>
       </div>
     );
