@@ -35,13 +35,20 @@ input {
 }
 
 .green-label {
-  background-color: $bottegaGreen;
   border-radius: 100px;
   width: 26px;
   height: 26px;
   font-size: 18px;
   text-align: center;
   color: white;
+}
+
+.gray {
+  background: #b3b3b3;
+}
+
+.green {
+  background-color: $bottegaGreen;
 }
 
 .button-wrapper {

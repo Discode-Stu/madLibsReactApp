@@ -10,7 +10,7 @@ function MadlibInput(props) {
     <Col className="input-wrapper" md="3">
       <Row>
         <Col md="2">
-          <label className="green-label">{props.index}</label>
+          <label className={`green-label ${props.state == '' ? 'gray' : 'green'}`}>{props.index}</label>
         </Col>
         <Col md="10">
           <input
@@ -48,7 +48,7 @@ class MadlibForm extends Component {
       nounTwo: '',
       adjectiveThree: '',
       celebrityTwo: '',
-      celebrithThree: '',
+      celebrityThree: '',
       adjectiveFour: '',
       nounThree: '',
       celebrityFour: '',
@@ -89,7 +89,7 @@ class MadlibForm extends Component {
       nounTwo: '',
       adjectiveThree: '',
       celebrityTwo: '',
-      celebrithThree: '',
+      celebrityThree: '',
       adjectiveFour: '',
       nounThree: '',
       celebrityFour: '',
